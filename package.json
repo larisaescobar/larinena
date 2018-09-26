@@ -1,5 +1,5 @@
 {
-  "homepage": "http://larisaescobar.github.io/ravenous-app/",
+  "homepage": "https://larisaescobar.github.io/ravenous-app/",
   "name": "ravenous",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "yarn run build && gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
